@@ -28,8 +28,7 @@ jobs:
         go-version: ${{matrix.goversion}}
     - name: Build
       run: |
-        go get github.com/golang/mock/mockgen@v1.4.3
-        go get -u github.com/go-bindata/go-bindata/...
+        go get -v -t -d ./...
         ARTIFACT_DESTINATION=./builds make build
     # - name: Check version
     #   run: |
