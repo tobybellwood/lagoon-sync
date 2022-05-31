@@ -4,10 +4,11 @@ on:
   push:
     tags:
       - 'v*.*.*'
+    branches:
+      - 'update_release'
   pull_request:
     branches:
       - 'main'
-      - 'update_release'
 
 jobs:
   test-suite:
