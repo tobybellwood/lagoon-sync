@@ -13,9 +13,7 @@ before:
 builds:
   - 
     id: lagoon-sync
-  -
     binary: lagoon-sync
-  -
     env:
       - CGO_ENABLED=0
     goos:
